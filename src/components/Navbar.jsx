@@ -79,7 +79,7 @@ const Navbar = ({ adminNav }) => {
   };
 
   return (
-    <div className="shadow-md md:py-2 px-6 py-0">
+    <div className="bg-gray-300 md:py-2 px-6 py-0">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex gap-[10px] md:gap-8 items-center justify-between ">
@@ -90,10 +90,11 @@ const Navbar = ({ adminNav }) => {
             className="h-[57px] w-[110px] cursor-pointer"
           />
           {/* Search  */}
-          <div className="md:w-auto w-[157px]  bg-gray-100 py-2  rounded-2xl">
+         
+          <div className="md:w-auto w-[157px]  bg-white-400 py-22  square-2xl">
             <label className="input-group">
               <span className="bg-inherit">
-                <BiSearchAlt className="text-gray-900" />
+                <BiSearchAlt className="text--900" />
               </span>
               <input
                 type="text"
@@ -105,7 +106,7 @@ const Navbar = ({ adminNav }) => {
           </div>
         </div>
         {!adminNav && (
-          <div className="lg:flex hidden  items-center justify-center gap-4">
+          <div className="lg:flex hidden  items-center justify-center gap-9   ">
             <h1
               onClick={() => navigate(`/products/${"product-allVideo"}`)}
               className="text-md text-gray-400 cursor-pointer hover:text-black transition-colors delay-75 ease-in-out"
@@ -115,7 +116,7 @@ const Navbar = ({ adminNav }) => {
             <div className="dropdown dropdown-hover">
               <h1
                 tabIndex={0}
-                className="text-md flex items-center gap-1 text-gray-400 cursor-pointer hover:text-black transition-colors delay-75 ease-in-out"
+                className="text-md flex items-center gap-2 text-gray-400 cursor-pointer hover:text-black transition-colors delay-75 ease-in-out"
               >
                 Men <FiChevronDown />
               </h1>
@@ -388,7 +389,7 @@ const Navbar = ({ adminNav }) => {
                   Sign Out
                 </button>
               ) : (
-                <button className="text-lg text-white bg-blue-500 px-2 py-1 rounded-md  hover:bg-blue-400 transition-colors delay-100 ease-out">
+                <button className="text-lg text-white bg-gray-500 px-2 py-1 rounded-md  hover:bg-gray-400 transition-colors delay-100 ease-out">
                   <Link to="/auth">Login</Link>
                 </button>
               )}
