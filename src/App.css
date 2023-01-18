@@ -1,0 +1,83 @@
+/* 
+*{
+  outline: 1px solid red;
+} */
+
+body {
+  overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* paginate style  */
+.paginateContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: .4rem;
+  margin: 0 .5rem;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous {
+  color: #000;
+  /* background-color: rgb(9, 177, 244); */
+  padding: 1rem 1.6rem;
+  border-radius: .5rem;
+}
+
+.active-btn {
+
+  color: rgb(45, 4, 65);
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: rgb(35, 24, 24);
+}
+
+/* paginate media style  */
+
+
+@media screen and (max-width:518px) {
+  .paginateContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .page-btn {
+    padding: .7rem;
+    margin: 0 .6rem;
+  }
+
+  .previous {
+    color: #000;
+    /* background-color: rgb(9, 177, 244); */
+    padding: .7rem 1.2rem;
+    border-radius: .5rem;
+  }
+
+  /* .active-btn {
+    background: rgb(9, 177, 244);
+    color: #fff;
+    border-radius: 50%;
+     padding: 1rem; 
+  } */
+
+  .link-btn {
+    text-decoration: none;
+    color: rgb(52, 43, 43);
+  }
+}
