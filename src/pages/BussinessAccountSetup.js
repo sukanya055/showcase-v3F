@@ -237,9 +237,9 @@ const BussinessAccountSetup = () => {
                     }
                     className="checkbox  checkbox-sm checkbox-secondary"
                   />
-                  <span className="label-text text-md text-gray-500 font-semibold">
+                  <a className="label-text text-md text-gray-500 font-semibold" href="/terms&conditions">
                     I agree to terms & conditions
-                  </span>
+                  </a>
                 </label>
                 <button
                   type="submit"
