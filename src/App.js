@@ -146,7 +146,7 @@ function App() {
         <Route path="/admindashboard" element={<Dashboard />} />
         <Route path="/product/review/:id" element={<Review />} />
         <Route path='*' element={<NotFound/>}/>
-        <Route path='/trems&conditions' element={<TermsAndConditions/>} />
+        <Route path='/terms&conditions' element={<TermsAndConditions/>} />
       </Routes>
     </div>
   );
