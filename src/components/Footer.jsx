@@ -268,6 +268,10 @@ const Footer = () => {
             <li
               class="flex items-start justify-center gap-1.5 sm:justify-start"
             >
+                <a
+                className="flex items-centre justify-centre sm:justify-start gap-1.5 group"
+                href="/terms&conditions"
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-5 h-5 text-white shrink-0"
@@ -287,10 +291,10 @@ const Footer = () => {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-             
-              <address  class="max-w-md mx-auto mt-13 leading-relaxed text-center text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left">
-                Privacy Policy
-              </address>
+              <span className="max-w-md mx-auto mt-13 leading-relaxed text-center text-white sm:max-w-xs sm:mx-0 sm:text-left">
+                  Terms&Conditions
+                </span>
+             </a>
             </li>
           </ul>
           <p
